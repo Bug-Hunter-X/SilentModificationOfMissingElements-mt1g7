@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    const element = document.getElementById("myDiv2");
+    if (element) {
+      element.innerHTML = "This text should replace the above.";
+    } else {
+      console.error("Element with id 'myDiv2' not found.");
+    }
+  </script>
+</body>
+</html>
